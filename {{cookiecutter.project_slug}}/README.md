@@ -1,0 +1,3 @@
+## {{cookiecutter.project_name}}
+
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=cbd_claudio-dutra-nodejs-template&metric=coverage)](https://sonarcloud.io/summary/new_code?id=cbd_claudio-dutra-nodejs-template) [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=cbd_claudio-dutra-nodejs-template&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=cbd_claudio-dutra-nodejs-template) [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=cbd_claudio-dutra-nodejs-template&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=cbd_claudio-dutra-nodejs-template)

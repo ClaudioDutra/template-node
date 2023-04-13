@@ -1,0 +1,17 @@
+{
+    "project_name": "Demo Project",
+    "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '-').replace('_', '-')}}",
+    "description": "{{cookiecutter.project_name}} for showcasing how cookiecutter works",
+    "github_url": [
+        "github.ibm.com",
+        "github.com"
+    ],
+    "github_org": "xpfarm",
+    "license": [
+        "AGPL",
+        "Apache-2.0",
+        "GPL",
+        "ISC",
+        "MIT"
+    ]
+}
