@@ -1,3 +1,12 @@
-## Dummy
+# Instructions
 
-[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=cbd_claudio-dutra-nodejs-template&metric=coverage)](https://sonarcloud.io/summary/new_code?id=cbd_claudio-dutra-nodejs-template) [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=cbd_claudio-dutra-nodejs-template&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=cbd_claudio-dutra-nodejs-template) [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=cbd_claudio-dutra-nodejs-template&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=cbd_claudio-dutra-nodejs-template)
+To demo this cookiecutter template you'll need two prerequisites:
+
+* cookiecutter
+* gh
+
+To run the cookiecutter you need to be in the parent directory and run:
+
+```sh
+cookiecutter yellow-belt-template
+```

@@ -1,8 +1,12 @@
 {
-  "name": "white-belt-template",
+  "name": "{{cookiecutter.project_slug}}",
   "version": "1.0.0",
-  "description": "",
+  "description": "{{cookiecutter.description}}",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git@{{cookiecutter.github_url}}:{{cookiecutter.github_org}}/{{cookiecutter.project_slug}}.git"
+  },
   "scripts": {
     "eslint:fix": "eslint --cache --fix",
     "eslint:verify": "eslint .",
@@ -13,7 +17,7 @@
     "prettier:verify": "prettier --check ."
   },
   "author": "",
-  "license": "ISC",
+  "license": "{{cookiecutter.license}}",
   "devDependencies": {
     "@commitlint/cli": "^17.4.4",
     "@commitlint/config-conventional": "^17.4.4",
