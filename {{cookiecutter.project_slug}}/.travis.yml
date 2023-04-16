@@ -1,0 +1,24 @@
+os: linux
+language: node_js
+node_js:
+  - {{cookiecutter.node_version}}
+dist: focal
+install:
+  - npm i
+cache:
+  directories:
+    - "~/.npm"
+    - "~/.cache"
+  npm: true
+addons:
+  sonarcloud: true
+stages:
+  - name: Unit test & sonar-scanner
+jobs:
+  include:
+    - stage: Unit test & sonar-scanner
+      script:
+        - npm test
+        - sonar-scanner -D sonar.login=$SONAR_TOKEN
+      name: Unit test & sonar-scanner
+      env: Unit test & sonar-scanner
