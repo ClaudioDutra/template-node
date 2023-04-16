@@ -1,1 +1,1 @@
-lts/*
+{{cookiecutter.node_version}}

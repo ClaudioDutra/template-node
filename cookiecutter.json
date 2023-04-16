@@ -13,5 +13,15 @@
         "GPL",
         "ISC",
         "MIT"
-    ]
+    ],
+    "sonar_org": [
+        "cbdutra",
+        "xp-farm-claudio-dutra"
+    ],
+    "sonar_enable_quality_gate": false,
+    "node_version": [
+        "lts/*",
+        "lts/gallium"
+    ],
+    "__sonar_token": ""
 }
