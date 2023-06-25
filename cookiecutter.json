@@ -1,27 +1,14 @@
 {
-    "project_name": "Demo Project",
-    "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '-').replace('_', '-')}}",
-    "description": "{{cookiecutter.project_name}} for showcasing how cookiecutter works",
-    "github_url": [
-        "github.ibm.com",
-        "github.com"
-    ],
-    "github_org": "cbd",
-    "license": [
-        "AGPL",
-        "Apache-2.0",
-        "GPL",
-        "ISC",
-        "MIT"
-    ],
-    "sonar_org": [
-        "cbdutra",
-        "xp-farm-claudio-dutra"
-    ],
-    "sonar_enable_quality_gate": false,
-    "node_version": [
-        "lts/*",
-        "lts/gallium"
-    ],
-    "__sonar_token": ""
+  "project_name": "Demo Project",
+  "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '-').replace('_', '-')}}",
+  "description": "{{cookiecutter.project_name}} for showcasing how cookiecutter works",
+  "github_url": ["github.ibm.com", "github.com"],
+  "github_org": "cbd",
+  "license": ["AGPL", "Apache-2.0", "GPL", "ISC", "MIT"],
+  "sonar_org": ["cbdutra", "xp-farm-claudio-dutra"],
+  "sonar_enable_quality_gate": false,
+  "node_version": ["lts/*", "lts/gallium"],
+  "__sonar_token": "",
+  "__snyk_token": "",
+  "__github_travis_token": ""
 }

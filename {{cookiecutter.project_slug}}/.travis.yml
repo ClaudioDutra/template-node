@@ -11,11 +11,19 @@ cache:
     - "~/.cache"
   npm: true
 addons:
-  sonarcloud: true
+  sonarcloud:
+    organization: "{{cookiecutter.sonar_org}}"
 stages:
+  - name: Quality checks
   - name: Unit test & sonar-scanner
 jobs:
   include:
+    - stage: Quality checks
+      script:
+        - npm run prettier:verify
+        - npm run eslint:verify
+        - npx snyk test
+      name: Quality checks
     - stage: Unit test & sonar-scanner
       script:
         - npm test

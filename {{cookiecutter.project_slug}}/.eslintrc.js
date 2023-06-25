@@ -11,9 +11,9 @@ module.exports = {
     "max-len": "off",
     "no-underscore-dangle": 0,
     "no-unused-vars": ["error", { argsIgnorePattern: "next" }],
-    camelcase: 0,
+    "camelcase": 0,
   },
   env: {
-    jest: true,
+    "jest": true,
   },
 };

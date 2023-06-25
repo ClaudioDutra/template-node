@@ -1,8 +1,9 @@
 # {{cookiecutter.project_name}}
 
-|-----------  |**Labels** |----------- |
-|    ---     |    ---     |    ---     |
-|  ✅ done   |  🛠️ WIP    | :exclamation: ERROR   |
+| ----------- | **Labels** | -----------         |
+| ----------- | ---------- | ------------------- |
+| ✅ done     | 🛠️ WIP     | :exclamation: ERROR |
+
 ---
 
 ## 📝 Description
