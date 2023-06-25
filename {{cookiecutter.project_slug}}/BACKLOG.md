@@ -5,16 +5,14 @@
 |  ✅ done   |  🛠️ WIP    | :exclamation: ERROR   |
 ---
 
-## 📝 Description
+## 🔖 BACKLOG
 
 ---
 
-## 📐 Rules
+### 🤔 User Stories
 
 ---
 
-## 🍅 Pomodoros
-
-### Pomodoro 1 🍅
+### 🧪 User Acceptance Tests
 
 ---

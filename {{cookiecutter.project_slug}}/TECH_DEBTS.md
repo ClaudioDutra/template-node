@@ -5,16 +5,6 @@
 |  ✅ done   |  🛠️ WIP    | :exclamation: ERROR   |
 ---
 
-## 📝 Description
-
----
-
-## 📐 Rules
-
----
-
-## 🍅 Pomodoros
-
-### Pomodoro 1 🍅
+## 👨‍💻 Technical Debts
 
 ---
