@@ -8,6 +8,7 @@
 
 ## 📝 Description
 
+$CODEWARS_KATA_DESCRIPTION
 ---
 
 ## 📐 Rules

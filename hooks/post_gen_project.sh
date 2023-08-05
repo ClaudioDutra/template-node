@@ -1,6 +1,42 @@
 #!/bin/bash
 
+# shellcheck disable=SC3000-SC4000
+
+replace_string_in_file_path() {
+    file_path="$1"
+    search_string="$2"
+    replace_string="$3"
+
+    temp_file_path="$(mktemp)"
+
+    while IFS= read -r line || [ -n "$line" ]; do
+        replaced_line="${line//$search_string/$replace_string}"
+
+        echo "$replaced_line" >>"$temp_file_path"
+    done <"$file_path"
+
+    mv "$temp_file_path" "$file_path"
+}
+
+get_kata_description() {
+    kata_id=$1
+
+    codewars_data=$(curl https://www.codewars.com/api/v1/code-challenges/${kata_id})
+
+    echo $codewars_data | jq -Rnr '[inputs] | join("\\n") | fromjson | .description'
+
+}
+
 echo "🏁  Starting the cookie cutter script."
+
+if [ '{{cookiecutter.is_codewars_kata}}' == 'True' ]; then
+    echo "ℹ️  Adding Codewars kata description."
+    kata_description=$(get_kata_description {{cookiecutter.codewars_kata_code}})
+    replace_string_in_file_path "NOTES.md" "\$CODEWARS_KATA_DESCRIPTION" "${kata_description}"
+    echo "✅ Codewars kata description added."
+else
+    replace_string_in_file_path "NOTES.md" "\$CODEWARS_KATA_DESCRIPTION" ""
+fi
 
 echo "ℹ️ Creating GitHub repository and initialize the git."
 gh repo create {{cookiecutter.github_url}}/{{cookiecutter.github_org}}/{{cookiecutter.project_slug}} --public
