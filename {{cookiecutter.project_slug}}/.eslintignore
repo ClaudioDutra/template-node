@@ -1,5 +1,4 @@
-
- ignore artifacts:
+# ignore artifacts:
 node_modules
 coverage
 .eslintcache
